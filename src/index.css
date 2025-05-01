@@ -6,5 +6,8 @@
     /* colors */
     --color-background: #4A4B4C;
     --color-accent: #EBB28A;
+    --color-darkGray: #242627;
+    /* max-width */
+    --max-width-content: 82rem;
   }
   

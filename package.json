@@ -2,10 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/*.html",
+    "start": "parcel src/*.html --no-hmr",
     "build": "parcel build src/*.html"
   },
   "keywords": [],
@@ -13,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "parcel": "^2.14.1",
+    "parcel": "^2.14.4",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.17"
   },

@@ -12,37 +12,58 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-display bg-background">
-    <main>
-      <header>
-        <img class="w-10 h-10" src="/src/assets/star.svg" alt="" />
-        <p>Agata Rostojek</p>
-        <p>UX Designer</p>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a download href="#">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+  <body class="font-display bg-background text-white">
+    <main class="px-4">
+      <header class="max-w-content mx-auto py-6">
+        <div class="flex gap-4 items-center">
+          <img class="w-10 h-10" src="/src/assets/star.svg" alt="" />
+          <div>
+            <p class="text-xl font-bold text-accent">Agata Rostojek</p>
+            <p class="opacity-40 font-bold tracking-wider">UX DESIGNER</p>
+          </div>
+          <nav class="hidden">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a download href="#">Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <section id="about">
-        <h1>
-          My name is Agata and I’m an aspiring frontend developer with a passion
-          for cognitive psychology.
+      <section id="about" class="max-w-content mx-auto mb-20">
+        <img
+          src="/src/assets/profile-photo.png"
+          alt="Agata Rostojek photo"
+          class="w-full mb-5"
+        />
+        <h1 class="text-2xl font-bold">
+          My name is Agata and I'm an aspiring
+          <span class="text-accent">frontend developer</span> with a passion for
+          cognitive psychology.
         </h1>
-        <p>
-          You might be interested in checking the list of my skills. Don’t
-          forget to have a glimpse at my projects. I’m looking for a new
-          challenges so if you have one - contact me. 😊
+        <p class="text-gray-400 mb-8">
+          You might be interested in checking the list of my
+          <a href="#skills" class="text-white">skills</a>. Don't forget to have
+          a glimpse at my ,<a href="#projects" class="text-white">projects</a>.
+          I'm looking for a new challenges so if you have one -
+          <a href="#contact" class="text-white">contact</a> me. 😊
         </p>
-        <a href="#contact">Get in touch</a>
-        <a href="#skills">Get to know me</a>
-        <img src="/src/assets/profile-photo.png" alt="" />
+        <div class="flex flex-col items-start gap-4">
+          <a
+            class="bg-accent text-background flex gap-3 font-bold font-xl py-2 px-4 items-center rounded-[0.625rem]"
+            href="#contact"
+            ><img src="/src/assets/contact-icon.svg" alt="" />Get in touch</a
+          >
+          <a
+            class="text-accent flex gap-3 font-bold font-xl py-2 px-4 items-center rounded-[0.625rem] border-2 border-darkGray"
+            href="#skills"
+            ><img src="/src/assets/skills-icon.svg" alt="" />Get to know me</a
+          >
+        </div>
       </section>
-      <section id="skills">
+      <section id="skills" class="max-w-content mx-auto">
         <h2>MY SKILLS</h2>
         <p>
           I've picked up some cool skills along the way, and I'm excited to
@@ -90,7 +111,7 @@
           </ul>
         </article>
       </section>
-      <section id="projects">
+      <section id="projects" class="max-w-content mx-auto">
         <h2>RECENT PROJECTS</h2>
         <p>
           Since diving into frontend development, I've brought a range of
@@ -114,6 +135,36 @@
           <a href="#">View demo</a>
           <a href="#">Source code</a>
         </article>
+      </section>
+      <section id="contact" class="max-w-content mx-auto">
+        <h2>Let's work together</h2>
+        <p>
+          I'm open for new opportunities. If you have one for me we should talk!
+        </p>
+        <a href="mailto:a.rostojek@gmail.com">a.rostojek@gmail.com</a>
+        <p>or find me on</p>
+        <ul>
+          <li>
+            <a href="#"
+              ><img class="w-6 h-6" src="/src/assets/github.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img class="w-6 h-6" src="/src/assets/github.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img class="w-6 h-6" src="/src/assets/github.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img class="w-6 h-6" src="/src/assets/github.svg" alt=""
+            /></a>
+          </li>
+        </ul>
       </section>
     </main>
   </body>
