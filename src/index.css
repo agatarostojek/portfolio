@@ -9,5 +9,11 @@
     --color-darkGray: #242627;
     /* max-width */
     --max-width-content: 82rem;
+    /*border*/
+    --radius-skillsBorder: 0.625rem;
+    /* letter spacing */
+    --tracking-tightest: -0.02rem;
+    /* shadow */
+    --inset-shadow-innerLight: inset 0 2px 0 0 rgba(255, 255, 255, 0.15);
   }
   
