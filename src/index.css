@@ -7,10 +7,13 @@
     --color-background: #4A4B4C;
     --color-accent: #EBB28A;
     --color-darkGray: #242627;
+    --color-lightGray: #DCDCDC;
     /* max-width */
     --max-width-content: 82rem;
     /*border*/
     --radius-skillsBorder: 0.625rem;
+    --radius-projectsBorder: 1.25rem;
+    --radius-projectsButtonsBorder: 0.75rem;
     /* letter spacing */
     --tracking-tightest: -0.02rem;
     /* shadow */
