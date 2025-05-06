@@ -42,35 +42,43 @@
           </ul>
         </nav>
       </header>
-      <section id="about" class="max-w-content mx-auto mb-20">
+      <section
+        id="about"
+        class="max-w-content mx-auto md:pt-20 mb-20 md:flex md:justify-between items-center md:gap-12"
+      >
         <img
+          class="mb-5 md:order-2 w-[25rem]"
           src="/src/assets/profile-photo.png"
           alt="Agata Rostojek photo"
-          class="w-full mb-5"
         />
-        <h1 class="text-2xl font-bold">
-          My name is Agata and I'm an aspiring
-          <span class="text-accent">frontend developer</span> with a passion for
-          cognitive psychology.
-        </h1>
-        <p class="text-lightGray mb-8">
-          You might be interested in checking the list of my
-          <a href="#skills" class="text-white">skills</a>. Don't forget to have
-          a glimpse at my <a href="#projects" class="text-white">projects</a>.
-          I'm looking for a new challenges so if you have one -
-          <a href="#contact" class="text-white">contact</a> me. 😊
-        </p>
-        <div class="flex flex-col items-start gap-4">
-          <a
-            class="bg-accent text-background flex gap-3 font-bold font-xl py-2 px-4 items-center rounded-skillsBorder border-2"
-            href="#contact"
-            ><img src="/src/assets/contact-icon.svg" alt="" />Get in touch</a
+        <div class="md:flex md:flex-col max-w-[47rem]">
+          <h1
+            class="mb-4 text-2xl md:text-3xl lg:text-5xl font-bold md:font-normal md:leading-tight"
           >
-          <a
-            class="text-accent flex gap-3 font-bold font-xl py-2 px-4 items-center rounded-skillsBorder border-2 border-darkGray"
-            href="#skills"
-            ><img src="/src/assets/skills-icon.svg" alt="" />Get to know me</a
-          >
+            My name is Agata and I'm an aspiring
+            <span class="text-accent">frontend developer</span> with a passion
+            for cognitive psychology.
+          </h1>
+          <p class="mb-8 md:mb-16 text-lightGray md:text-2xl font-normal">
+            You might be interested in checking the list of my
+            <a href="#skills" class="text-white font-medium">skills</a>. Don't
+            forget to have a glimpse at my
+            <a href="#projects" class="text-white font-medium">projects</a>. I'm
+            looking for a new challenges so if you have one -
+            <a href="#contact" class="text-white font-medium">contact</a> me. 😊
+          </p>
+          <div class="flex flex-col md:flex-row items-start gap-4">
+            <a
+              class="bg-accent text-background flex gap-3 font-bold md:text-xl py-2 md:py-3.5 px-4 md:px-8 items-center rounded-skillsBorder md:rounded-projectsBorder border-2"
+              href="#contact"
+              ><img src="/src/assets/contact-icon.svg" alt="" />Get in touch</a
+            >
+            <a
+              class="text-accent flex gap-3 font-bold md:text-xl py-2 md:py-3.5 px-4 md:px-8 items-center rounded-skillsBorder md:rounded-projectsBorder border-2 border-darkGray"
+              href="#skills"
+              ><img src="/src/assets/skills-icon.svg" alt="" />Get to know me</a
+            >
+          </div>
         </div>
       </section>
       <section id="skills" class="max-w-content mx-auto mb-28">
