@@ -5,7 +5,9 @@
     --font-display: 'DM Sans', "sans-serif"; 
     /* colors */
     --color-background: #4A4B4C;
+    --color-backgroundLight: #5c5d5d;
     --color-accent: #EBB28A;
+    --color-accentDark: #d3a07c;    ;
     --color-darkGray: #242627;
     --color-lightGray: #DCDCDC;
     /* max-width */
@@ -19,5 +21,9 @@
     /* shadow */
     --inset-shadow-innerLight: inset 0 2px 0 0 rgba(255, 255, 255, 0.15);
     --inset-shadow-innerLightIcons: inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+    /* animations */
+    --animate-spinny: spin 16s ease-out infinite normal none;
   }
+
+
   

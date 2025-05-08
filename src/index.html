@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./index.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="description" content="Agata Rostojek - portfolio" />
+    <meta property="og:title" content="Agata Rostojek - portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/og.png" />
+    <meta
+      property="og:url"
+      content="https://agatarostojek-portfolio.netlify.app/"
+    />
+    <meta name="og:description" content="Agata Rostojek - portfolio" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +30,11 @@
     <main class="px-4">
       <header class="max-w-content mx-auto py-6 flex justify-between">
         <div class="flex gap-4 items-center">
-          <img class="w-10 h-10" src="/src/assets/star.svg" alt="" />
+          <img
+            class="w-10 h-10 animate-spinny"
+            src="/src/assets/star.svg"
+            alt=""
+          />
           <div>
             <p class="text-xl font-bold text-accent">Agata Rostojek</p>
             <p class="opacity-40 font-bold tracking-wider">UX DESIGNER</p>
@@ -28,13 +46,16 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li>
-              <a class="flex gap-2 items-center" download href="#"
+              <a
+                class="flex gap-2 items-center"
+                download
+                href="./assets/agatarostojek-cv.pdf"
                 ><img src="/src/assets/download-icon.svg" alt="" />Resume</a
               >
             </li>
             <li>
               <a
-                class="inline-block bg-accent text-background rounded-xl py-3.5 px-8"
+                class="inline-block bg-accent text-background rounded-xl py-3.5 px-8 hover:bg-accentDark transition ease-in"
                 href="#contact"
                 >Contact</a
               >
@@ -46,11 +67,22 @@
         id="about"
         class="max-w-content mx-auto md:pt-20 mb-20 md:flex md:justify-between items-center md:gap-12"
       >
-        <img
-          class="mb-5 md:order-2 w-[25rem]"
-          src="/src/assets/profile-photo.png"
-          alt="Agata Rostojek photo"
-        />
+        <picture class="md:order-2">
+          <source
+            srcset="./assets/profile-photo.png?as=webp&width=400"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/profile-photo.png?as=avif&width=400"
+            type="image/avif"
+          />
+          <img
+            class="mb-5 w-[25rem] md:min-w-[20rem] lg:min-w-[20rem]"
+            src="/src/assets/profile-photo.png"
+            alt=""
+          />
+        </picture>
+
         <div class="md:flex md:flex-col max-w-[47rem]">
           <h1
             class="mb-4 text-2xl md:text-3xl lg:text-5xl font-bold md:font-normal md:leading-tight"
@@ -71,12 +103,12 @@
           </p>
           <div class="flex flex-col md:flex-row items-start gap-4 flex-wrap">
             <a
-              class="bg-accent text-background flex gap-3 font-bold md:text-xl py-2 md:py-3.5 px-4 md:px-8 items-center rounded-skillsBorder md:rounded-projectsBorder border-2"
+              class="bg-accent text-background flex gap-3 font-bold md:text-xl py-2 md:py-3.5 px-4 md:px-8 items-center rounded-skillsBorder md:rounded-projectsBorder border-2 hover:bg-accentDark transition ease-in"
               href="#contact"
               ><img src="/src/assets/contact-icon.svg" alt="" />Get in touch</a
             >
             <a
-              class="text-accent flex gap-3 font-bold md:text-xl py-2 md:py-3.5 px-4 md:px-8 items-center rounded-skillsBorder md:rounded-projectsBorder border-2 border-darkGray"
+              class="text-accent flex gap-3 font-bold md:text-xl py-2 md:py-3.5 px-4 md:px-8 items-center rounded-skillsBorder md:rounded-projectsBorder border-2 border-darkGray hover:bg-backgroundLight transition ease-in"
               href="#skills"
               ><img src="/src/assets/skills-icon.svg" alt="" />Get to know me</a
             >
@@ -188,7 +220,7 @@
           If you have one for me we should talk!
         </p>
         <a
-          class="bg-accent mb-10 md:mb-20 px-8 py-3.5 text-background font-bold text-xl text-center leading-9 flex break-all gap-3 justify-center rounded-projectsBorder"
+          class="bg-accent mb-10 md:mb-20 px-8 py-3.5 text-background font-bold text-xl text-center leading-9 flex break-all gap-3 justify-center rounded-projectsBorder hover:bg-accentDark transition ease-in"
           href="mailto:a.rostojek@gmail.com"
           ><img src="/src/assets/mail-icon.svg" alt="" />a.rostojek@gmail.com</a
         >
