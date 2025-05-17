@@ -68,3 +68,5 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
   .catch((e) => {
     console.log(e);
   });
+
+console.log("Heya! Wanna talk? Send me a message: arostojek@gmail.com");
