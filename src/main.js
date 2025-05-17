@@ -48,12 +48,12 @@ fetch(`https://api.github.com/users/${username}/repos?direction=${direction}`)
       
       </ul>
       <div class="flex flex-col flex-wrap md:flex-row items-start gap-4">
-        <a class="px-5 py-4 flex items-center gap-2 bg-background rounded-projectsButtonsBorder border-[1px] border-darkGray text-accent font-bold md:text-xl hover:bg-backgroundLight transition ease-in" href="${homepage}"
+        <a class="px-5 py-4 flex items-center gap-2 bg-background rounded-projectsButtonsBorder border-[1px] border-darkGray text-accent font-bold md:text-xl hover:bg-backgroundLight transition ease-in focus:inset-shadow-darkButton" href="${homepage}"
         target="_blank"
         rel="noreferrer nofollow">
           <img src="${demoIcon}" alt="" />View demo
         </a>
-        <a class="px-5 py-4 flex items-center gap-2 bg-background rounded-projectsButtonsBorder border-[1px] border-darkGray text-accent font-bold md:text-xl hover:bg-backgroundLight transition ease-in" href="${html_url}" target="_blank"
+        <a class="px-5 py-4 flex items-center gap-2 bg-background rounded-projectsButtonsBorder border-[1px] border-darkGray text-accent font-bold md:text-xl hover:bg-backgroundLight transition ease-in focus:inset-shadow-darkButton" href="${html_url}" target="_blank"
         rel="noreferrer nofollow">
           <img src="${githubIcon}" alt="" />Source code
         </a>
